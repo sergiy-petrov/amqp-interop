@@ -45,7 +45,7 @@ final class AmqpQueue implements InteropAmqpQueue
         return $this->consumerTag;
     }
 
-    public function setConsumerTag(string $consumerTag = null): void
+    public function setConsumerTag(?string $consumerTag = null): void
     {
         $this->consumerTag = $consumerTag;
     }

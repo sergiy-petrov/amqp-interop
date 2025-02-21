@@ -36,7 +36,7 @@ final class AmqpBind implements InteropAmqpBind
     public function __construct(
         AmqpDestination $target,
         AmqpDestination $source,
-        string $routingKey = null,
+        ?string $routingKey = null,
         int $flags = self::FLAG_NOPARAM,
         array $arguments = []
     ) {
